@@ -1,0 +1,26 @@
+When updating some state based on its previous value (state), 
+you should use/pass the function form of the state updating function 
+(i.e., to setCounter(), in this example). This function automatically 
+receives the previous value and should return the new value:
+setIncrement(prevIncrement => prevIncrement + 1);
+
+
+
+export default function App() {
+    
+    const [increment, setIncrement] = React.useState(0);
+    const changeIncrementValue = () => {
+        console.log(increment);
+
+        // !!! use "prev" before the State value name
+
+        setIncrement(prevIncrement => prevIncrement + 1);
+        console.log(increment);
+    };
+    return (
+      <div>
+        <p id="counter">{increment}</p>
+        <button onClick={changeIncrementValue}>Increment</button>
+      </div>
+    );
+}

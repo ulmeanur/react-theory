@@ -1,0 +1,19 @@
+npm install
+npm i --package-lock-only
+npm install --no-fund
+npm install --save styled-components
+
+
+How do I fix npm install errors?
+If you install the package but you still get the error, then follow the steps below:
+delete the node modules folder by running rm -rf node_modules.
+delete package.lock.json file by running rm -f package-lock.json.
+clean up the NPM cache by running npm cache clean --force.
+install all packages again by running npm install.
+=========================
+
+react-scripts --- has vulnerabilities !!!!
+
+npm install throws -- 6 high severity vulnerabilities // https://github.com/facebook/create-react-app/issues/11174
+
+Then, ensure you run npm audit --production rather than npm audit. This will fix your warnings.

@@ -1,0 +1,6 @@
+ testing React apps
+ ==> keep in mind that any file with .test.js or .spec.js extensions will be executed when the script is launched.
+
+
+Alternatives to Create React App
+ https://hackernoon.com/create-react-app-is-dead-here-are-some-alternatives

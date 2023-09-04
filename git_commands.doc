@@ -1,0 +1,51 @@
+shortcuts
+
+Shift + Alt + F = format document/section
+
+=============================
+Initialize a new Git PROJECT
+
+//create a new repository in Git with the project name
+
+// add git ignore file in the project folder
+
+git init //Create empty Git repository
+git add . 
+git commit -m "first commit"
+
+git remote add origin https://github.com/ulmeanur/goal-course-app.git
+
+git push --set-upstream origin master
+
+
+
+git checkout –b branchname  //Create and access new branch
+=============================
+git status
+git log
+
+git status Check working directory & staging area status
+
+// ON A NEWLY PROJECT
+git remote add origin https://github.com/ulmeanur/goal-course-app.git                           
+
+
+// ON AN EXISTING BRANCH
+git checkout FEATURE_BRANCH
+git fetch origin/FEATURE_BRANCH
+
+///from the new branch other than master
+git status
+git add .
+git commit -m "MESSAGE"
+git push origin
+
+git checkout master
+git merge origin/FEATURE_BRANCH  // to merge FEATURE_BRANCH iun master
+git checkout origin/FEATURE_BRANCH 
+git push origin
+
+git reset <file>  // To unstage all changes for all files added with git add .
+
+
+
